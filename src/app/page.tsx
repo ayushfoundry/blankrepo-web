@@ -475,6 +475,73 @@ export default function Home() {
           </div>
         </div>
       </section>
+            <section className="border-t border-white/8">
+        <div className="mx-auto max-w-[1440px] px-6 py-20 md:px-10 md:py-24">
+          <div className="overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.03]">
+            <div className="grid gap-10 px-6 py-10 md:px-10 md:py-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
+              <div>
+                <p className="text-sm font-medium uppercase tracking-[0.28em] text-white/40">
+                  Early access
+                </p>
+
+                <h2 className="mt-6 max-w-3xl text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-[3rem]">
+                  Get early access when the first BlankRepo sessions go live
+                </h2>
+
+                <p className="mt-6 max-w-2xl text-base leading-8 text-white/62 sm:text-lg">
+                  We’re building the practice environment we wish existed for
+                  modern backend interview loops. Join the waitlist to get early
+                  product updates, beta access, and new scenario releases.
+                </p>
+
+                <div className="mt-8 space-y-3 text-sm leading-7 text-white/56">
+                  <p>• Early beta invites</p>
+                  <p>• New scenario drops</p>
+                  <p>• Sample Signal Maps</p>
+                  <p>• Zero spam, only product updates</p>
+                </div>
+              </div>
+
+              <div className="flex items-center">
+                <div className="w-full rounded-[24px] border border-white/10 bg-black/30 p-6 md:p-7">
+                  <p className="text-xs font-medium uppercase tracking-[0.24em] text-white/38">
+                    Join the waitlist
+                  </p>
+
+                  <form className="mt-6 space-y-4">
+                    <div>
+                      <label
+                        htmlFor="email"
+                        className="mb-2 block text-sm text-white/58"
+                      >
+                        Email
+                      </label>
+                      <input
+                        id="email"
+                        type="email"
+                        placeholder="you@example.com"
+                        className="w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4 text-sm text-white placeholder:text-white/25 outline-none transition focus:border-white/25"
+                      />
+                    </div>
+
+                    <button
+                      type="submit"
+                      className="w-full rounded-2xl bg-white px-5 py-4 text-sm font-medium text-black transition hover:bg-white/90"
+                    >
+                      Request early access
+                    </button>
+                  </form>
+
+                  <p className="mt-4 text-xs leading-6 text-white/40">
+                    No payment. No commitment. Just a heads-up when BlankRepo is
+                    ready to try.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
