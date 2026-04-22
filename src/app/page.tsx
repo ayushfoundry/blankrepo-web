@@ -175,6 +175,97 @@ export default function Home() {
           </div>
         </div>
       </section>
+            <section className="border-t border-white/8">
+        <div className="mx-auto max-w-[1440px] px-6 py-20 md:px-10 md:py-24">
+          <div className="max-w-3xl">
+            <p className="text-sm font-medium uppercase tracking-[0.28em] text-white/40">
+              Example scenarios
+            </p>
+            <h2 className="mt-6 max-w-4xl text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-[3rem]">
+              Practice the kinds of backend problems that don’t look like LeetCode
+            </h2>
+            <p className="mt-6 max-w-2xl text-base leading-8 text-white/62 sm:text-lg">
+              Each scenario starts from a vague business prompt and expects you to
+              model the domain, write runnable code, and make progress under changing
+              requirements.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-6 lg:grid-cols-3">
+            <div className="rounded-[24px] border border-white/10 bg-white/[0.03] p-7">
+              <p className="text-xs font-medium uppercase tracking-[0.24em] text-white/38">
+                Scenario 01
+              </p>
+              <h3 className="mt-5 text-2xl font-semibold text-white">
+                Delivery Payout Engine
+              </h3>
+              <p className="mt-4 text-sm leading-7 text-white/62">
+                Calculate partner payouts from a stream of order events, then adapt
+                when the same order can appear multiple times and only the latest
+                state should count.
+              </p>
+
+              <div className="mt-8 rounded-2xl border border-white/10 bg-black/30 p-4">
+                <p className="text-xs uppercase tracking-[0.18em] text-white/40">
+                  What this tests
+                </p>
+                <p className="mt-3 text-sm leading-7 text-white/58">
+                  Event modeling, status handling, money math, and whether your
+                  design survives stream-style updates.
+                </p>
+              </div>
+            </div>
+
+            <div className="rounded-[24px] border border-white/10 bg-white/[0.03] p-7">
+              <p className="text-xs font-medium uppercase tracking-[0.24em] text-white/38">
+                Scenario 02
+              </p>
+              <h3 className="mt-5 text-2xl font-semibold text-white">
+                Cart &amp; Pricing API
+              </h3>
+              <p className="mt-4 text-sm leading-7 text-white/62">
+                Start from a blank editor and design a cart system with
+                customizations, discounts, surge pricing, and merchant-specific
+                promo rules.
+              </p>
+
+              <div className="mt-8 rounded-2xl border border-white/10 bg-black/30 p-4">
+                <p className="text-xs uppercase tracking-[0.18em] text-white/40">
+                  What this tests
+                </p>
+                <p className="mt-3 text-sm leading-7 text-white/58">
+                  Domain modeling, price composition, scope control, and how
+                  quickly you can get to a runnable first slice.
+                </p>
+              </div>
+            </div>
+
+            <div className="rounded-[24px] border border-white/10 bg-white/[0.03] p-7">
+              <p className="text-xs font-medium uppercase tracking-[0.24em] text-white/38">
+                Scenario 03
+              </p>
+              <h3 className="mt-5 text-2xl font-semibold text-white">
+                Rate Limiter / Quota Service
+              </h3>
+              <p className="mt-4 text-sm leading-7 text-white/62">
+                Build a quota engine that can enforce policy rules for different
+                users and endpoints, then evolve it when exception paths and new
+                limits appear.
+              </p>
+
+              <div className="mt-8 rounded-2xl border border-white/10 bg-black/30 p-4">
+                <p className="text-xs uppercase tracking-[0.18em] text-white/40">
+                  What this tests
+                </p>
+                <p className="mt-3 text-sm leading-7 text-white/58">
+                  Policy modeling, extensibility, edge-case thinking, and whether
+                  your logic collapses once rules stop being uniform.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
