@@ -395,6 +395,86 @@ export default function Home() {
           </div>
         </div>
       </section>
+            <section className="border-t border-white/8">
+        <div className="mx-auto max-w-[1440px] px-6 py-20 md:px-10 md:py-24">
+          <div className="grid gap-14 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
+            <div>
+              <p className="text-sm font-medium uppercase tracking-[0.28em] text-white/40">
+                Who this is for
+              </p>
+
+              <h2 className="mt-6 max-w-3xl text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-[3rem]">
+                Built for engineers preparing for harder backend interview loops
+              </h2>
+
+              <p className="mt-6 max-w-2xl text-base leading-8 text-white/62 sm:text-lg">
+                BlankRepo is designed for candidates who are being evaluated on
+                vague prompts, runnable code, business logic, and design
+                adaptability — not just isolated algorithm recall.
+              </p>
+            </div>
+
+            <div className="grid gap-6 md:grid-cols-2">
+              <div className="rounded-[24px] border border-white/10 bg-white/[0.03] p-6">
+                <p className="text-xs font-medium uppercase tracking-[0.22em] text-white/38">
+                  Primary fit
+                </p>
+                <h3 className="mt-5 text-xl font-semibold text-white">
+                  Senior and staff backend candidates
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-white/60">
+                  Especially useful if your interview loops involve blank-editor
+                  coding rounds, domain modeling, pricing logic, stateful flows,
+                  or hybrid coding-plus-design discussions.
+                </p>
+              </div>
+
+              <div className="rounded-[24px] border border-white/10 bg-white/[0.03] p-6">
+                <p className="text-xs font-medium uppercase tracking-[0.22em] text-white/38">
+                  Strong secondary fit
+                </p>
+                <h3 className="mt-5 text-xl font-semibold text-white">
+                  Ambitious mid-level engineers
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-white/60">
+                  If you are preparing for more demanding backend interviews than
+                  standard LeetCode-style prep covers, this is the kind of practice
+                  environment that helps close that gap.
+                </p>
+              </div>
+
+              <div className="rounded-[24px] border border-white/10 bg-white/[0.03] p-6">
+                <p className="text-xs font-medium uppercase tracking-[0.22em] text-white/38">
+                  Best used when
+                </p>
+                <h3 className="mt-5 text-xl font-semibold text-white">
+                  You need realistic repetition
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-white/60">
+                  Use BlankRepo when you want to rehearse the transition from vague
+                  prompt to working code, pressure-test your assumptions, and see
+                  whether your design survives requirement changes.
+                </p>
+              </div>
+
+              <div className="rounded-[24px] border border-white/10 bg-white/[0.03] p-6">
+                <p className="text-xs font-medium uppercase tracking-[0.22em] text-white/38">
+                  Not the focus
+                </p>
+                <h3 className="mt-5 text-xl font-semibold text-white">
+                  Generic entry-level interview prep
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-white/60">
+                  This is not meant to replace foundational algorithm practice.
+                  It is built for candidates who need a better way to practice the
+                  more open-ended backend interview formats showing up later in the
+                  hiring ladder.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
