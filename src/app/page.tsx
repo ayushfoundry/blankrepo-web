@@ -1,4 +1,32 @@
 export default function Home() {
+  const steps = [
+    {
+      number: "01",
+      title: "Read the prompt",
+      body: "Start from a vague backend scenario instead of a polished algorithm problem with a predefined method signature.",
+    },
+    {
+      number: "02",
+      title: "Clarify requirements",
+      body: "Surface assumptions early and decide what matters before you code yourself into a corner.",
+    },
+    {
+      number: "03",
+      title: "Write runnable code",
+      body: "Model the domain, create sample flows, and get to working C# code that actually runs end to end.",
+    },
+    {
+      number: "04",
+      title: "Handle pivots",
+      body: "Adapt when the problem changes mid-round and see whether your design bends or breaks.",
+    },
+    {
+      number: "05",
+      title: "Review the Signal Map",
+      body: "Get feedback on requirement discovery, executable modeling, and adaptability under pressure.",
+    },
+  ];
+
   return (
     <main className="min-h-screen bg-black text-white selection:bg-white/20 selection:text-white">
       <section className="mx-auto max-w-[1440px] px-6 py-10 md:px-10 md:py-12">
@@ -107,6 +135,43 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-white/8">
+        <div className="mx-auto max-w-[1440px] px-6 py-20 md:px-10 md:py-24">
+          <div className="max-w-3xl">
+            <p className="text-sm font-medium uppercase tracking-[0.28em] text-white/40">
+              How it works
+            </p>
+            <h2 className="mt-6 max-w-4xl text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-[3rem]">
+              A practice loop built for how senior backend interviews actually unfold
+            </h2>
+            <p className="mt-6 max-w-2xl text-base leading-8 text-white/62 sm:text-lg">
+              BlankRepo is designed for the rounds that start with a vague business
+              prompt, force you to make assumptions in real time, and judge whether
+              your code and design still hold when the requirements shift.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5">
+            {steps.map((step) => (
+              <div
+                key={step.number}
+                className="rounded-[24px] border border-white/10 bg-white/[0.03] p-6"
+              >
+                <p className="text-xs font-medium uppercase tracking-[0.24em] text-white/38">
+                  {step.number}
+                </p>
+                <h3 className="mt-5 text-xl font-semibold text-white">
+                  {step.title}
+                </h3>
+                <p className="mt-4 text-sm leading-7 text-white/62">
+                  {step.body}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
