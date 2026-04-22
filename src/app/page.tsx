@@ -266,6 +266,135 @@ export default function Home() {
           </div>
         </div>
       </section>
+            <section className="border-t border-white/8">
+        <div className="mx-auto max-w-[1440px] px-6 py-20 md:px-10 md:py-24">
+          <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+            <div>
+              <p className="text-sm font-medium uppercase tracking-[0.28em] text-white/40">
+                The Signal Map
+              </p>
+
+              <h2 className="mt-6 max-w-3xl text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-[3rem]">
+                Feedback on the engineering signals that generic coding prep misses
+              </h2>
+
+              <p className="mt-6 max-w-2xl text-base leading-8 text-white/62 sm:text-lg">
+                BlankRepo does not just tell you whether your code compiles. It
+                highlights where your approach is strong, where it is brittle, and
+                which parts of your interview process would help or hurt you in a
+                real senior backend loop.
+              </p>
+
+              <div className="mt-10 space-y-5">
+                <div className="rounded-[20px] border border-white/10 bg-white/[0.03] p-5">
+                  <p className="text-xs font-medium uppercase tracking-[0.22em] text-white/38">
+                    Why it matters
+                  </p>
+                  <p className="mt-3 text-sm leading-7 text-white/60">
+                    A senior-level loop is rarely just about correctness. It is also
+                    about requirement discovery, scope control, design adaptability,
+                    and how quickly you can reach a runnable first slice.
+                  </p>
+                </div>
+
+                <div className="rounded-[20px] border border-white/10 bg-white/[0.03] p-5">
+                  <p className="text-xs font-medium uppercase tracking-[0.22em] text-white/38">
+                    What you get
+                  </p>
+                  <p className="mt-3 text-sm leading-7 text-white/60">
+                    A structured report that shows what you clarified, what you
+                    modeled well, where your design bent under pressure, and what to
+                    improve before the real interview.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="rounded-[28px] border border-white/10 bg-white/[0.03] p-6 md:p-7">
+              <div className="flex items-center justify-between">
+                <p className="text-xs font-medium uppercase tracking-[0.24em] text-white/40">
+                  Staff-Level Signal Map
+                </p>
+                <div className="rounded-full border border-white/10 bg-black/30 px-3 py-1 text-xs text-white/50">
+                  Sample Report
+                </div>
+              </div>
+
+              <div className="mt-8 space-y-6">
+                <div className="rounded-[20px] border border-white/10 bg-black/30 p-5">
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <h3 className="text-lg font-semibold text-white">
+                        Requirement Clarification
+                      </h3>
+                      <p className="mt-2 text-sm leading-7 text-white/58">
+                        Did you surface the missing assumptions before you started
+                        coding, or did you guess and hardcode your way forward?
+                      </p>
+                    </div>
+                    <span className="rounded-full border border-white/10 px-3 py-1 text-xs text-white/72">
+                      Strong
+                    </span>
+                  </div>
+
+                  <div className="mt-5 h-2 rounded-full bg-white/10">
+                    <div className="h-2 w-[84%] rounded-full bg-white/80" />
+                  </div>
+                </div>
+
+                <div className="rounded-[20px] border border-white/10 bg-black/30 p-5">
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <h3 className="text-lg font-semibold text-white">
+                        Executable Modeling
+                      </h3>
+                      <p className="mt-2 text-sm leading-7 text-white/58">
+                        Did you turn the prompt into sensible entities, runnable
+                        flows, and code that actually demonstrated the behavior being
+                        discussed?
+                      </p>
+                    </div>
+                    <span className="rounded-full border border-white/10 px-3 py-1 text-xs text-white/72">
+                      Strong
+                    </span>
+                  </div>
+
+                  <div className="mt-5 h-2 rounded-full bg-white/10">
+                    <div className="h-2 w-[76%] rounded-full bg-white/72" />
+                  </div>
+                </div>
+
+                <div className="rounded-[20px] border border-white/10 bg-black/30 p-5">
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <h3 className="text-lg font-semibold text-white">
+                        Adaptability Under Pivot
+                      </h3>
+                      <p className="mt-2 text-sm leading-7 text-white/58">
+                        When the requirements changed, did your architecture absorb
+                        the shift cleanly, or did the solution start collapsing into
+                        special-case logic?
+                      </p>
+                    </div>
+                    <span className="rounded-full border border-white/10 px-3 py-1 text-xs text-white/58">
+                      Mixed
+                    </span>
+                  </div>
+
+                  <div className="mt-5 h-2 rounded-full bg-white/10">
+                    <div className="h-2 w-[49%] rounded-full bg-white/45" />
+                  </div>
+                </div>
+              </div>
+
+              <p className="mt-6 text-sm leading-7 text-white/44">
+                Not just correctness. A clearer read on how you think, scope,
+                model, and adapt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
