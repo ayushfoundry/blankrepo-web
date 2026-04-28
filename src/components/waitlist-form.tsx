@@ -69,7 +69,7 @@ export function WaitlistForm() {
         <button
           type="submit"
           disabled={status === "loading"}
-          className="w-full rounded-2xl bg-white px-5 py-4 text-sm font-medium text-black transition hover:bg-white/90 disabled:cursor-not-allowed disabled:opacity-70"
+          className="w-full cursor-pointer rounded-2xl bg-white px-5 py-4 text-sm font-medium text-black transition hover:bg-white/90 disabled:cursor-not-allowed disabled:opacity-70"
         >
           {status === "loading" ? "Submitting..." : "Request early access"}
         </button>
