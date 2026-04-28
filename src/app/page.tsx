@@ -46,13 +46,20 @@ export default function Home() {
               how you perform on the signals senior interviews actually test.
             </p>
 
-            <div className="mt-14 flex flex-col gap-4 sm:flex-row">
-              <button className="rounded-full bg-white px-8 py-4 text-sm font-medium text-black transition hover:bg-white/90">
+            <div className="mt-10 flex flex-wrap gap-4">
+              <a
+                href="#waitlist"
+                className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition hover:bg-white/90"
+              >
                 Join the waitlist
-              </button>
-              <button className="rounded-full border border-white/15 px-8 py-4 text-sm font-medium text-white transition hover:border-white/35 hover:bg-white/[0.04]">
+              </a>
+
+              <a
+                href="#scenarios"
+                className="inline-flex items-center justify-center rounded-full border border-white/14 px-6 py-3 text-sm font-medium text-white transition hover:border-white/24 hover:bg-white/[0.03]"
+              >
                 See a sample scenario
-              </button>
+              </a>
             </div>
           </div>
 
@@ -176,7 +183,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="border-t border-white/8">
+      <section id="scenarios" className="border-t border-white/8">
         <div className="mx-auto max-w-[1440px] px-6 py-20 md:px-10 md:py-24">
           <div className="max-w-3xl">
             <p className="text-sm font-medium uppercase tracking-[0.28em] text-white/40">
@@ -476,7 +483,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="border-t border-white/8">
+      <section id="waitlist" className="border-t border-white/8">
         <div className="mx-auto max-w-[1440px] px-6 py-20 md:px-10 md:py-24">
           <div className="overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.03]">
             <div className="grid gap-10 px-6 py-10 md:px-10 md:py-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
@@ -504,8 +511,8 @@ export default function Home() {
               </div>
 
               <div className="flex items-center">
-  <WaitlistForm />
-</div>
+                <WaitlistForm />
+              </div>
             </div>
           </div>
         </div>
