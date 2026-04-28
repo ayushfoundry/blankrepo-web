@@ -1,3 +1,4 @@
+import { WaitlistForm } from "@/components/waitlist-form";
 export default function Home() {
   const steps = [
     {
@@ -175,7 +176,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-            <section className="border-t border-white/8">
+      <section className="border-t border-white/8">
         <div className="mx-auto max-w-[1440px] px-6 py-20 md:px-10 md:py-24">
           <div className="max-w-3xl">
             <p className="text-sm font-medium uppercase tracking-[0.28em] text-white/40">
@@ -266,7 +267,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-            <section className="border-t border-white/8">
+      <section className="border-t border-white/8">
         <div className="mx-auto max-w-[1440px] px-6 py-20 md:px-10 md:py-24">
           <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
             <div>
@@ -395,7 +396,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-            <section className="border-t border-white/8">
+      <section className="border-t border-white/8">
         <div className="mx-auto max-w-[1440px] px-6 py-20 md:px-10 md:py-24">
           <div className="grid gap-14 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16">
             <div>
@@ -475,7 +476,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-            <section className="border-t border-white/8">
+      <section className="border-t border-white/8">
         <div className="mx-auto max-w-[1440px] px-6 py-20 md:px-10 md:py-24">
           <div className="overflow-hidden rounded-[32px] border border-white/10 bg-white/[0.03]">
             <div className="grid gap-10 px-6 py-10 md:px-10 md:py-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
@@ -503,41 +504,8 @@ export default function Home() {
               </div>
 
               <div className="flex items-center">
-                <div className="w-full rounded-[24px] border border-white/10 bg-black/30 p-6 md:p-7">
-                  <p className="text-xs font-medium uppercase tracking-[0.24em] text-white/38">
-                    Join the waitlist
-                  </p>
-
-                  <form className="mt-6 space-y-4">
-                    <div>
-                      <label
-                        htmlFor="email"
-                        className="mb-2 block text-sm text-white/58"
-                      >
-                        Email
-                      </label>
-                      <input
-                        id="email"
-                        type="email"
-                        placeholder="you@example.com"
-                        className="w-full rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-4 text-sm text-white placeholder:text-white/25 outline-none transition focus:border-white/25"
-                      />
-                    </div>
-
-                    <button
-                      type="submit"
-                      className="w-full rounded-2xl bg-white px-5 py-4 text-sm font-medium text-black transition hover:bg-white/90"
-                    >
-                      Request early access
-                    </button>
-                  </form>
-
-                  <p className="mt-4 text-xs leading-6 text-white/40">
-                    No payment. No commitment. Just a heads-up when BlankRepo is
-                    ready to try.
-                  </p>
-                </div>
-              </div>
+  <WaitlistForm />
+</div>
             </div>
           </div>
         </div>
